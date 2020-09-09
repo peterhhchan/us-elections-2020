@@ -39,14 +39,15 @@ with open('votes.csv', newline='') as f:
 ## denoted by '0'.  We remove it here.
 states.pop('0', None)
 
-std_d = 15
-skew = -2 ## Make skew negative to favor Republicans
+std_d = 8.5
+skew = -3 ## Make skew negative to favor Republicans, positive for Dems
+skew_dem = 0.3 ## percentage of undecided voters that will vote Democrat
 
 def win_dem (dem, rep, s):
     undecided = 100 - (dem + rep)
 
     # undecided voters are assigned 50/50
-    dem_adj = undecided * 0.5 + dem + s
+    dem_adj = undecided * skew_dem + dem + s
 
     if numpy.random.default_rng().normal(dem_adj, std_d) > 50:
         return 1
@@ -75,7 +76,7 @@ def simulate ():
 
 def run_sims():
     wins_dem = 0;
-    iterations = 1000;
+    iterations = 10000;
     for _ in range (iterations):
         wins_dem += simulate()
 
