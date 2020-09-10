@@ -1,4 +1,15 @@
-## us-elections-2020 ##
+# us-elections-2020 #
+
+## markets.py ##
+
+Using betting data from [PredictIt] (predictit.org), simulate different election outcomes.  This script is quite fast, be sure to call `get_markets` once before calling `simulate`.
+
+### Limitations ###
+
+On PredictIt, the cost of each share (the implied probability) does not necessarily equal what the market believes is the true probability. For example, shares of California trading at 95 cents each at the time of writing imply a Democratic win 95% of the time, but in practice, the Democrats will hold the state of California nearly 99+% of the time. Various reasons for why this inefficiency exist, including the time-value of money and fees charged by PredictIt for withdrawal.
+
+
+## elections.py ##
 
 A simple python script to simulate possible outcomes in the 2020 US presidential elections.
 
@@ -10,8 +21,10 @@ We use state-by-state polling data to generate the likelihood a candidate will w
 Polling data is obtained from [270towin](https://www.270towin.com/2020-polls-biden-trump/).
 
 ### Discussion ###
-Prelimary results suggest the polling data strongly favours Democrats.
+Preliminary results suggest the polling data strongly favours Democrats.
 
 ### Additional Reading ###
 https://ig.ft.com/us-election-2020/
 https://projects.fivethirtyeight.com/2020-election-forecast/
+
+
