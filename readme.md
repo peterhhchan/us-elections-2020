@@ -19,8 +19,11 @@ This script uses state-by-state polling data to generate the likelihood a candid
 
 Polling data is obtained from [270towin](https://www.270towin.com/2020-polls-biden-trump/).
 
-## Discussion ##
-Preliminary results suggest the polling data strongly favours Democrats.
+### Limitations ###
+Polls suffer from many biases, their reach may not represent the demographics of the electorate on voting day, nor will they necessarily reflect how voters will vote on election day.  More sophisticated polls and models will adjust for these individual biases, as well as incumbency effects and the current state of the economy (which favors the incumbent).  
+
+Once again, Nebraska and Maine uses the congressional district method to assign their votes. However, their electoral votes are assigned using the winner-take-all system in our simulations.
+
 
 ## Additional Reading ##
 https://ig.ft.com/us-election-2020/
