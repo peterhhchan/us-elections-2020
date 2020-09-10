@@ -4,11 +4,11 @@ import numpy
 
 # Get the polling data
 session = Session()
-response = session.get("https://www.270towin.com/polls/php/get-early-polls.php?election_year=2020&candidate_name_rep=Trump&candidate_name_dem=Biden")
+#response = session.get("https://www.270towin.com/polls/php/get-early-polls.php?election_year=2020&candidate_name_rep=Trump&candidate_name_dem=Biden")
 
-result = response.json()['results']
+#result = response.json()['results']
 
-states = {}
+#states = {}
 for x in result:
     state = x
     dem = result[x]['poll_dem']
@@ -18,7 +18,7 @@ for x in result:
 ## Not all the states from 270towin have polling data. Instead of using
 ## polling data, we take a shortcut and assign the state to one part
 ## in votes.csv.
-with open('votes.csv', newline='') as f:
+with open('percents.csv', newline='') as f:
     reader = csv.reader(f)
     for v,s,p in reader:
         if (s not in states.keys()):
