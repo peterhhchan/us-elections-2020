@@ -10,6 +10,7 @@ Using betting data from [PredictIt] (predictit.org), simulate different election
 
 On PredictIt, the cost of each share (the implied probability) does not necessarily equal what the market believes is the true probability. For example, shares of California trading at 95 cents each at the time of writing imply a Democratic win 95% of the time, but in practice, the Democrats will hold the state of California nearly 99+% of the time. Various reasons for why this inefficiency exist, including the time-value of money and fees charged by PredictIt for withdrawal.
 
+Nebraska and Maine uses the congressional district method to assign their votes. However, their electoral votes are assigned using the winner-take-all system in our simulations.
 
 ## elections.py ##
 
