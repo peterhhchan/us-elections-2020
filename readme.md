@@ -1,5 +1,7 @@
 # us-elections-2020 #
 
+Simple scripts to simulate possible outcomes in the 2020 US presidential elections.
+
 ## markets.py ##
 
 Using betting data from [PredictIt] (predictit.org), simulate different election outcomes.  This script is quite fast, be sure to call `get_markets` once before calling `simulate`.
@@ -11,19 +13,15 @@ On PredictIt, the cost of each share (the implied probability) does not necessar
 
 ## elections.py ##
 
-A simple python script to simulate possible outcomes in the 2020 US presidential elections.
-
-### Method ###
-
-We use state-by-state polling data to generate the likelihood a candidate will win that state. (In the code, the likelihood is a probability represented by a simple normal distribution.) We can optionally introduce a global bias on the polling data, biasing the results towards either candidate. More sophisticated models are possible.
+This script uses state-by-state polling data to generate the likelihood a candidate will win that state. (In the code, the likelihood is a probability represented by a simple normal distribution.) We can optionally introduce a global bias on the polling data, biasing the results towards either candidate. More sophisticated models are possible.
 
 
 Polling data is obtained from [270towin](https://www.270towin.com/2020-polls-biden-trump/).
 
-### Discussion ###
+## Discussion ##
 Preliminary results suggest the polling data strongly favours Democrats.
 
-### Additional Reading ###
+## Additional Reading ##
 https://ig.ft.com/us-election-2020/
 https://projects.fivethirtyeight.com/2020-election-forecast/
 
