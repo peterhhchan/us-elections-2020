@@ -4,7 +4,7 @@ Simple scripts to simulate possible outcomes in the 2020 US presidential electio
 
 ## markets.py ##
 
-A script to simulate election outcomes using betting data from [PredictIt](www.predictit.org).  This script is quite fast, be sure to call `get_markets` once before calling `simulate`. You can see the script in action [here](https://github.com/peterhhchan/us-elections-2020/blob/master/notebooks/PredictItSimulator/predictit.ipynb).
+A script to simulate election outcomes using betting data from [PredictIt](www.predictit.org).  This script is quite fast, be sure to call `get_markets` once before calling `simulate`. [Here](https://github.com/peterhhchan/us-elections-2020/blob/master/notebooks/PredictItSimulator/predictit.ipynb) is a Jupyter notebook demonstration.
 
 ### Limitations ###
 
